@@ -5,11 +5,13 @@ DOMAIN-SUFFIX,qichiyu.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
-
+rules:
+  - RULE-SET,private_ip,直连,no-resolve
+  - RULE-SET,private_domain,直连
 # 国外DNS
-- DOMAIN-SUFFIX,dns.google
-- DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
-- DOMAIN-SUFFIX,dot.sb
+  - DOMAIN-SUFFIX,dns.google
+  - DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
+  - DOMAIN-SUFFIX,dot.sb
 DOMAIN-SUFFIX,dns.umbrella.com
 DOMAIN-SUFFIX,dns.quad9.net
 DOMAIN-SUFFIX,dns.google
